@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Uguesas',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Ugesas'),
+          title: const Text('Uguesas'),
         ),
         body: HomePage(),
       ),
