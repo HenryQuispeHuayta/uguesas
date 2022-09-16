@@ -1,27 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:uguesas/src/homePage.dart';
 
-void main(){
-  runApp(MyApp());
-}
+void main() => runApp(const MyApp());
 
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'U-guesas',
-        home: Scaffold(
-            appBar: AppBar(
-                title: const Text('U-guesas'),
-            ),
-            body: Column(
-                children: <Widget>[
-                  Text(
-                      'H. normal'
-                  ),
-                ],
-            ),
+      title: 'Uguesas',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Ugesas'),
         ),
+        body: HomePage(),
+      ),
     );
-
   }
 }
